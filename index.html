@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Exam Portal</h1>
+            <div id="timer">00:00:00</div>
+        </div>
+
+        <div id="teacherPanel" class="teacher-panel">
+            <h2>Teacher Settings</h2>
+            <input type="text" id="pdfFilename" placeholder="Enter PDF filename (e.g., exam.pdf)">
+            <input type="number" id="examDuration" placeholder="Exam duration (minutes)">
+            <button class="button" onclick="saveSettings()">Save Settings</button>
+        </div>
+
+        <button id="startBtn" class="button">Start Exam</button>
+        
+        <div class="pdf-container">
+            <embed id="pdf-viewer" type="application/pdf">
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
